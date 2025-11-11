@@ -1,0 +1,32 @@
+[h1]Sam's Cooler Death Screen[/h1]
+
+Hello everyone! It's me, the main menu guy again.
+
+This is another mod I made for personal use. Same old story. I wanted to change something in the game and there was no mod for it, so I made one myself!
+
+[b]What does this mod do?[/b]
+This mod completely overhauls the death screen experience, replacing the boring default death screen with a much cooler one full of pIzZaZz.
+
+[b]Features:[/b]
+[list]
+[*]Death text based on how you died
+[*]Alot of random death messages
+[*]Smooth fade in animation
+[*]Fully configurable - toggle features on/off to your liking!
+[/list]
+
+[b]Customization Options:[/b]
+[list]
+[*]Show/Hide death messages
+[*]Show/Hide coin loss display
+[*]Show/Hide respawn timer
+[*]Enable/disable dark background
+[*]Adjust background darkness
+[*]Toggle fade effect
+[/list]
+
+You can check out my other mods on my profile if you want to see more stuff I've made.
+
+Have fun with the mod! (NOTE: other death screen mods MAY conflict with this one)
+
+[i]Stay cool![/i]

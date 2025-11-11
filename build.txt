@@ -1,0 +1,4 @@
+displayName = Sam's Cooler Death Screen
+author = Samuel Salis
+version = 1.0
+side = Client

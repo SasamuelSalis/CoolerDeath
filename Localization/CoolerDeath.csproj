@@ -1,0 +1,6 @@
+<ItemGroup>
+  <!-- Treat all localization .hjson files as non-compiled content -->
+  <None Include="Localization\**\*.hjson" />
+  <!-- Ensure they're removed from Compile wildcard if present -->
+  <Compile Remove="Localization\**\*.hjson" />
+</ItemGroup>

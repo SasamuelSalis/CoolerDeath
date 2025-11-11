@@ -1,0 +1,51 @@
+Mods: {
+	CoolerDeath: {
+		DisplayName: Cooler Death
+		Description: A cooler death screen experience
+
+		Config: {
+			// Category headers
+			DeathScreenAppearance: Death Screen Appearance
+			Customization: Customization
+
+			// Config options - names and tooltips
+			ShowQuotes: {
+				Name: Show Quotes
+				Tooltip: Display random funny quotes when you die
+				Label: Show Quotes
+			}
+
+			ShowCoinLoss: {
+				Name: Show Coin Loss
+				Tooltip: Display how much money you lost when you die
+				Label: Show Coin Loss
+			}
+
+			ShowRespawnTimer: {
+				Name: Show Respawn Timer
+				Tooltip: Display the respawn countdown timer
+				Label: Show Respawn Timer
+			}
+
+			DarkBackground: {
+				Name: Dark Background
+				Tooltip: Show a dark background behind the death screen text
+				Label: Dark Background
+			}
+
+			BackgroundDarkness: {
+				Name: Background Darkness
+				Tooltip: How dark the background should be
+				Label: Background Darkness
+			}
+
+			EnableFadeEffects: {
+				Name: Enable Fade Effects
+				Tooltip: Enable smooth fade in/out animations for the death screen
+				Label: Enable Fade Effects
+			}
+		}
+
+		Configs.CoolerDeathConfig.DisplayName: Cooler Death Config
+	}
+}

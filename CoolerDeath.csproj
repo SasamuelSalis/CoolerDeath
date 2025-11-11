@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+
+	</PropertyGroup>
+
+	<!-- References -->
+
+	<!-- Add localization files -->
+	<ItemGroup>
+		<Compile Include="Localization\en-US.hjson" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="Localization\CoolerDeath.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <!-- Treat all localization .hjson files as non-compiled content -->
+	  <None Include="Localization\**\*.hjson" />
+	  <Compile Remove="Localization\**\*.hjson" />
+	</ItemGroup>
+
+</Project>
