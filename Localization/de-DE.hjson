@@ -1,0 +1,155 @@
+Mods: {
+	CoolerDeath: {
+		DisplayName: Coolerer Tod Bildschirm
+		Description: Eine coolere Tod Bildschirm Erfahrung
+
+		Configs: {
+			CoolerDeathConfig: {
+				DisplayName: Coolerer Tod Bildschirm Konfiguration
+
+				ShowQuotes: {
+					Label: Zitate anzeigen
+					Tooltip: Zeige zufaellige lustige Zitate wenn du stirbst
+				}
+
+				ShowCoinLoss: {
+					Label: Muenzverlust anzeigen
+					Tooltip: Zeige wie viel Geld du beim Sterben verloren hast
+				}
+
+				ShowRespawnTimer: {
+					Label: Respawn Timer anzeigen
+					Tooltip: Zeige den Countdown bis zum Respawn
+				}
+
+				DarkBackground: {
+					Label: Dunkler Hintergrund
+					Tooltip: Zeige einen dunklen Hintergrund hinter dem Tod Bildschirm Text
+				}
+
+				BackgroundDarkness: {
+					Label: Hintergrund Dunkelheit
+					Tooltip: Wie dunkel der Hintergrund sein soll (0.1 = hell, 1.0 = sehr dunkel)
+				}
+
+				EnableFadeEffects: {
+					Label: Einblendeffekte aktivieren
+					Tooltip: Aktiviere sanfte Ein-/Ausblend Animationen fuer den Tod Bildschirm
+				}
+			}
+		}
+
+		DeathMessages: {
+			SlainByNPC: Du wurdest von {0} getoetet
+			SlainByProjectile: Du wurdest von {0} getoetet
+			SlainByPlayer: Du wurdest von {0} getoetet
+			SlainByDefault: Du wurdest von etwas getoetet
+			Fell: Du bist aus grosser Hoehe gefallen
+			Drowned: Du bist ertrunken
+			Lava: Du wurdest von Lava verbrannt
+			Suffocated: Du hast erstickt
+			Spikes: Du wurdest von Stacheln aufgespiesst
+			Burned: Du bist verbrannt
+			Burning: Du wurdest lebendig verbrannt
+			Cursed: Du wurdest verflucht
+			Poisoned: Du wurdest vergiftet
+			Envenomed: Du wurdest vergiftet
+			Electrocuted: Du wurdest elektrisiert
+			Froze: Du bist erfroren
+			Default: Du bist gestorben
+		}
+
+		UI: {
+			LostNoMoney: Kein Geld verloren
+			LostCoins: "{0} verloren"
+			Respawning: Wiederbeleben in {0}s
+
+			Quotes: {
+				83: So ist das Leben
+				82: C'est la vie
+				81: So ist es halt
+				80: Naja
+				79: Das ist in Ordnung
+				78: Aufgabe erfolgreich failed
+				77: Wiederbeleben
+				76: Muenze einwerfen
+				75: Guter Lauf
+				74: GG no re
+				73: Rip
+				72: Alter
+				71: Ups
+				70: Oha
+				69: Das ist Mist, Mann
+				68: F im Chat
+				67: Nun, das ist passiert
+				66: Zurueck an Reissbrett
+				65: Die Schicksale sind grausam
+				64: Faehigkeitsdemonstration abgeschlossen
+				63: Daraus lernst du was
+				62: Unvermeidlich
+				61: Die Sterne standen nicht guenstig
+				60: Ruhe in Stuecken
+				59: Demuetigend
+				58: Uff
+				57: Die Wuerfel waren nicht auf deiner Seite
+				56: Glueckwunsch
+				55: Da gehen wir wieder
+				54: Wirklich
+				53: Deine Schuld
+				52: Lade Wiederbeleben
+				51: Traurig
+				50: F
+				49: Pech
+				48: Vorhersehbar
+				47: Deine Faehigkeiten brauchen Arbeit
+				46: Versuchs nochmal
+				45: Todeszaehler: +1
+				44: Suboptimal
+				43: Hier liegt dein Ego
+				42: Vermeidbar
+				41: Peinlich
+				40: ...
+				39: Boese: 1, Du: 0
+				38: Das wird Spuren hinterlassen
+				37: Gruesse vom Sensenmann
+				36: Statistisch wahrscheinlich
+				35: Da geht dein Geld
+				34: Lernerfahrung
+				33: Wie waers mit nicht sterben
+				32: Wut ist eine valide Reaktion
+				31: Das Universum sagte nein
+				30: Haettest dich konzentrieren sollen
+				29: Ist nur ein Kratzer
+				28: Immerhin bist du beharrlich
+				27: Ist nur ein Aergernis
+				26: Du wirst wieder auferstehen
+				25: Ist okay, versuchs nochmal
+				24: Spiel vorbei, fuer jetzt
+				23: hehe
+				22: Hab ich kommen sehen
+				21: Einfach naechstes Mal ausweichen
+				20: Pass auf wo du hintrittst
+				19: urkomisch
+				18: Versuchs nochmal, Champion
+				17: Oof
+				16: Ist nur ein Spiel
+				15: Hab das nicht kommen sehen
+				14: Ist das alles was du hast
+				13: Kriegst sie naechstes Mal
+				12: Neugier ist der Katze Tod
+				11: pfft
+				10: Versuch und Irrtum
+				9: Nicht aergern, verbessern
+				8: Naechstes Mal mehr Glueck
+				7: Bleib entschlossen
+				6: Hat das wehgetan
+				5: Immerhin keine Steuern
+				4: Tod ist nur ein Rueckschlag
+				3: Skill Issue
+				2: Noch einer beisst ins Gras
+				1: Du hast es versucht, oder
+				0: Vielleicht naechstes Mal
+			}
+		}
+	}
+}

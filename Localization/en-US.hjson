@@ -3,49 +3,153 @@ Mods: {
 		DisplayName: Cooler Death
 		Description: A cooler death screen experience
 
-		Config: {
-			// Category headers
-			DeathScreenAppearance: Death Screen Appearance
-			Customization: Customization
+		Configs: {
+			CoolerDeathConfig: {
+				DisplayName: Cooler Death Config
 
-			// Config options - names and tooltips
-			ShowQuotes: {
-				Name: Show Quotes
-				Tooltip: Display random funny quotes when you die
-				Label: Show Quotes
-			}
+				ShowQuotes: {
+					Label: Show Quotes
+					Tooltip: Display random funny quotes when you die
+				}
 
-			ShowCoinLoss: {
-				Name: Show Coin Loss
-				Tooltip: Display how much money you lost when you die
-				Label: Show Coin Loss
-			}
+				ShowCoinLoss: {
+					Label: Show Coin Loss
+					Tooltip: Display how much money you lost when you die
+				}
 
-			ShowRespawnTimer: {
-				Name: Show Respawn Timer
-				Tooltip: Display the respawn countdown timer
-				Label: Show Respawn Timer
-			}
+				ShowRespawnTimer: {
+					Label: Show Respawn Timer
+					Tooltip: Display the respawn countdown timer
+				}
 
-			DarkBackground: {
-				Name: Dark Background
-				Tooltip: Show a dark background behind the death screen text
-				Label: Dark Background
-			}
+				DarkBackground: {
+					Label: Dark Background
+					Tooltip: Show a dark background behind the death screen text
+				}
 
-			BackgroundDarkness: {
-				Name: Background Darkness
-				Tooltip: How dark the background should be
-				Label: Background Darkness
-			}
+				BackgroundDarkness: {
+					Label: Background Darkness
+					Tooltip: How dark the background should be (0.1 = light, 1.0 = very dark)
+				}
 
-			EnableFadeEffects: {
-				Name: Enable Fade Effects
-				Tooltip: Enable smooth fade in/out animations for the death screen
-				Label: Enable Fade Effects
+				EnableFadeEffects: {
+					Label: Enable Fade Effects
+					Tooltip: Enable smooth fade in/out animations for the death screen
+				}
 			}
 		}
 
-		Configs.CoolerDeathConfig.DisplayName: Cooler Death Config
+		DeathMessages: {
+			SlainByNPC: You were slain by {0}!
+			SlainByProjectile: You were slain by {0}!
+			SlainByPlayer: You were slain by {0}!
+			SlainByDefault: You were slain by something!
+			Fell: You fell from a great height!
+			Drowned: You drowned!
+			Lava: You were incinerated by lava!
+			Suffocated: You suffocated!
+			Spikes: You were impaled by spikes!
+			Burned: You burned to death!
+			Burning: You were burned alive!
+			Cursed: You were cursed to death!
+			Poisoned: You were poisoned!
+			Envenomed: You were envenomed!
+			Electrocuted: You were electrocuted!
+			Froze: You froze to death!
+			Default: You died...
+		}
+
+		UI: {
+			LostNoMoney: Lost no money!
+			LostCoins: Lost {0}!
+			Respawning: Respawning in {0}s...
+
+			Quotes: {
+				83: Such is life.
+				82: C'est la vie.
+				81: It be like that.
+				80: Welp.
+				79: This is fine.
+				78: Task failed successfully.
+				77: Respawning...
+				76: Insert coin.
+				75: Good run.
+				74: GG no re.
+				73: Rip.
+				72: Bruh.
+				71: Oops.
+				70: Yikes.
+				69: That's rough buddy.
+				68: F in chat.
+				67: Well, that happened.
+				66: Back to drawing board.
+				65: Fates are cruel.
+				64: Skill demonstration complete.
+				63: You'll learn something from this.
+				62: Inevitable.
+				61: Stars were aligned incorrectly.
+				60: Rest in shreds.
+				59: Humbling.
+				58: Eurgh
+				57: Dice weren't in your favor.
+				56: Congratulations.
+				55: Here we go again.
+				54: Really?
+				53: Your fault.
+				52: Respawn loading...
+				51: Sad.
+				50: F
+				49: Unfortunate.
+				48: Predictable.
+				47: Skills need some work.
+				46: Try again.
+				45: Death count: +1
+				44: Suboptimal.
+				43: Here lies your ego.
+				42: Avoidable.
+				41: Embarrassing.
+				40: ...
+				39: Evil: 1, You: 0
+				38: That'll leave a mark.
+				37: Reaper's regards.
+				36: Statistically likely.
+				35: There goes your money.
+				34: Learning experience.
+				33: Try not dying?
+				32: Rage is valid.
+				31: Universe said 'no'.
+				30: Should've locked in.
+				29: T'is but a scratch.
+				28: Atleast you're persistent.
+				27: Just an inconvenience.
+				26: You will rise again.
+				25: It's okay, try again.
+				24: Game over, for now.
+				23: hehe.
+				22: Saw that coming.
+				21: Just dodge next time.
+				20: Watch your step.
+				19: Hilarious.
+				18: Try again, champ.
+				17: Oof.
+				16: It's just a game.
+				15: Didn't see that coming.
+				14: Is that all you've got?
+				13: You'll get 'em next time.
+				12: Curiosity killed the cat.
+				11: pfft.
+				10: Trial and error.
+				9: Don't get mad, get better.
+				8: Better luck next time.
+				7: Stay determined!
+				6: Did that hurt?
+				5: At least no taxes!
+				4: Death is just a setback.
+				3: Skill issue?
+				2: Another one bites the dust.
+				1: You tried, right?
+				0: Maybe next time.
+			}
+		}
 	}
 }

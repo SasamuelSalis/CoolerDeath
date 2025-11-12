@@ -1,0 +1,155 @@
+Mods: {
+	CoolerDeath: {
+		DisplayName: Pantalla de Muerte Más Guay
+		Description: Una experiencia de pantalla de muerte más guay
+
+		Configs: {
+			CoolerDeathConfig: {
+				DisplayName: Configuración de Pantalla de Muerte Más Guay
+
+				ShowQuotes: {
+					Label: Mostrar Frases
+					Tooltip: Mostrar frases graciosas aleatorias cuando mueres
+				}
+
+				ShowCoinLoss: {
+					Label: Mostrar Pérdida de Monedas
+					Tooltip: Mostrar cuánto dinero perdiste cuando mueres
+				}
+
+				ShowRespawnTimer: {
+					Label: Mostrar Temporizador de Reaparición
+					Tooltip: Mostrar la cuenta regresiva para reaparecer
+				}
+
+				DarkBackground: {
+					Label: Fondo Oscuro
+					Tooltip: Mostrar un fondo oscuro detrás del texto de la pantalla de muerte
+				}
+
+				BackgroundDarkness: {
+					Label: Oscuridad del Fondo
+					Tooltip: Qué tan oscuro debe ser el fondo (0.1 = claro, 1.0 = muy oscuro)
+				}
+
+				EnableFadeEffects: {
+					Label: Activar Efectos de Fundido
+					Tooltip: Activar animaciones suaves de aparición/desaparición para la pantalla de muerte
+				}
+			}
+		}
+
+		DeathMessages: {
+			SlainByNPC: ¡Fuiste asesinado por {0}!
+			SlainByProjectile: ¡Fuiste asesinado por {0}!
+			SlainByPlayer: ¡Fuiste asesinado por {0}!
+			SlainByDefault: Fuiste asesinado...
+			Fell: ¡Te caíste de una gran altura!
+			Drowned: ¡Te ahogaste!
+			Lava: ¡Fuiste incinerado por la lava!
+			Suffocated: ¡Te asfixiaste!
+			Spikes: ¡Fuiste empalado por púas!
+			Burned: ¡Te quemaste hasta la muerte!
+			Burning: ¡Fuiste quemado vivo!
+			Cursed: ¡Fuiste maldecido hasta la muerte!
+			Poisoned: ¡Fuiste envenenado!
+			Envenomed: ¡Fuiste emponzoñado!
+			Electrocuted: ¡Fuiste electrocutado!
+			Froze: ¡Te congelaste hasta la muerte!
+			Default: Moriste...
+		}
+
+		UI: {
+			LostNoMoney: ¡No perdiste dinero!
+			LostCoins: ¡Perdiste {0}!
+			Respawning: Reapareciendo en {0}s...
+
+			Quotes: {
+				83: Así es la vida.
+				82: C'est la vie.
+				81: Así son las cosas.
+				80: Bueno...
+				79: Esto está bien.
+				78: Tarea fallada con éxito.
+				77: Reapareciendo...
+				76: Inserta moneda.
+				75: Buena partida.
+				74: GG no re.
+				73: Rip.
+				72: Bro.
+				71: Ups.
+				70: Ostras.
+				69: Vaya rollo, tío.
+				68: F en el chat.
+				67: Bueno, eso pasó.
+				66: Volver al tablero de dibujo.
+				65: Los hados son crueles.
+				64: Demostración de habilidad completada.
+				63: Aprenderás algo de esto.
+				62: Inevitable.
+				61: Las estrellas no estaban alineadas.
+				60: Descansa en pedazos.
+				59: Humillante.
+				58: Uff
+				57: Los dados no estaban de tu lado.
+				56: Enhorabuena.
+				55: Allá vamos otra vez.
+				54: ¿En serio?
+				53: Culpa tuya.
+				52: Cargando reaparici�n...
+				51: Triste.
+				50: F
+				49: Desafortunado.
+				48: Predecible.
+				47: Tus habilidades necesitan trabajo.
+				46: Inténtalo de nuevo.
+				45: Contador de muertes: +1
+				44: Subóptimo.
+				43: Aquí yace tu ego.
+				42: Evitable.
+				41: Embarazoso.
+				40: ...
+				39: Mal: 1, Tú: 0
+				38: Eso va a dejar marca.
+				37: Saludos de la parca.
+				36: Estadísticamente probable.
+				35: Ahí va tu dinero.
+				34: Experiencia de aprendizaje.
+				33: ¿Qué tal no morir?
+				32: La rabia es una respuesta válida.
+				31: El universo dijo 'no'.
+				30: Deber�as haber puesto empeño.
+				29: Es solo un rasguño.
+				28: Al menos eres persistente.
+				27: Es solo un inconveniente.
+				26: Te levantarás de nuevo.
+				25: Está bien, inténtalo de nuevo.
+				24: Juego terminado, por ahora.
+				23: jeje.
+				22: Lo vi venir.
+				21: Solo esquiva la próxima vez.
+				20: Mira por dónde pisas.
+				19: Hilarante.
+				18: Inténtalo de nuevo, campeón.
+				17: pipipipipipipi...
+				16: Es solo un juego.
+				15: No lo vi venir.
+				14: ¿Es todo lo que tienes?
+				13: Los pillarás la próxima vez.
+				12: La curiosidad mató al gato.
+				11: pfft.
+				10: Prueba y error.
+				9: No te enfades, mejora.
+				8: Mejor suerte la próxima vez.
+				7: ¡Mantente determinado!
+				6: ¿Eso dolió?
+				5: ¡Al menos sin impuestos!
+				4: La muerte es solo un revés.
+				3: ¿Problema de habilidad?
+				2: Otro mordió el polvo.
+				1: Lo intentaste, ¿verdad?
+				0: Quizás la próxima vez.
+			}
+		}
+	}
+}

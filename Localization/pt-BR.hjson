@@ -1,0 +1,155 @@
+Mods: {
+	CoolerDeath: {
+		DisplayName: Tela de Morte Mais Legal
+		Description: Uma experiência de tela de morte mais legal
+
+		Configs: {
+			CoolerDeathConfig: {
+				DisplayName: Configurações da Tela de Morte Mais Legal
+
+				ShowQuotes: {
+					Label: Mostrar Frases
+					Tooltip: Exibir frases engraçadas aleatórias quando você morre
+				}
+
+				ShowCoinLoss: {
+					Label: Mostrar Perda de Moedas
+					Tooltip: Exibir quanto dinheiro você perde quando morre
+				}
+
+				ShowRespawnTimer: {
+					Label: Mostrar Timer de Renascimento
+					Tooltip: Exibir a contagem regressiva para renascer
+				}
+
+				DarkBackground: {
+					Label: Fundo Escuro
+					Tooltip: Mostrar um fundo escuro atrás do texto da tela de morte
+				}
+
+				BackgroundDarkness: {
+					Label: Escuridão do Fundo
+					Tooltip: Quão escuro o fundo deve ser (0.1 = claro, 1.0 = muito escuro)
+				}
+
+				EnableFadeEffects: {
+					Label: Ativar Efeitos de Fade
+					Tooltip: Ativar animações suaves de aparecer/desaparecer para a tela de morte
+				}
+			}
+		}
+
+		DeathMessages: {
+			SlainByNPC: Você foi morto por {0}!
+			SlainByProjectile: Você foi morto por {0}!
+			SlainByPlayer: Você foi morto por {0}!
+			SlainByDefault: Você foi morto...
+			Fell: Você caiu de uma grande altura!
+			Drowned: Você afogou!
+			Lava: Você foi incinerado pela lava!
+			Suffocated: Você sufocou!
+			Spikes: Você foi espetado por espinhos!
+			Burned: Você queimou até a morte!
+			Burning: Você foi queimado vivo!
+			Cursed: Você foi amaldiçoado até a morte!
+			Poisoned: Você foi envenenado!
+			Envenomed: Você foi intoxicado!
+			Electrocuted: Você foi eletrocutado!
+			Froze: Você congelou!
+			Default: Você morreu...
+		}
+
+		UI: {
+			LostNoMoney: Não perdeu dinheiro!
+			LostCoins: Perdeu {0}!
+			Respawning: Renascendo em {0}s...
+
+			Quotes: {
+				83: Assim É a vida.
+				82: C'est la vie.
+				81: É assim mesmo.
+				80: Bem...
+				79: Tá tudo bem.
+				78: Tarefa falhou com sucesso.
+				77: Renascendo...
+				76: Insira moeda.
+				75: Boa tentativa.
+				74: GG no re.
+				73: Rip.
+				72: Cara.
+				71: Oops.
+				70: Eita.
+				69: Que droga, cara.
+				68: F no chat.
+				67: Bem, isso aconteceu.
+				66: De volta pra estaca zero.
+				65: Os destinos são cruéis.
+				64: Demonstração de habilidade foi successo.
+				63: Você vai aprender algo com isso.
+				62: Inevitável.
+				61: As estrelas não estavam alinhadas.
+				60: Descanse em pedaços.
+				59: Humilhante.
+				58: Aff
+				57: Os dados não estavam a seu favor.
+				56: Parabêns.
+				55: Lá vamos nós de novo.
+				54: Sério?
+				53: Culpa sua.
+				52: Carregando renascimento...
+				51: Triste.
+				50: F
+				49: Azar.
+				48: Previsível.
+				47: Suas habilidades precisam de trabalho.
+				46: Tente novamente.
+				45: Contador de mortes: +1
+				44: Subótimo.
+				43: Aqui jaz seu ego.
+				42: Evitável.
+				41: Embaraçoso.
+				40: ...
+				39: Mal: 1, Você: 0
+				38: Isso vai deixar marca.
+				37: Levado pelo ceifador.
+				36: Estatisticamente prov�vel.
+				35: Lá se foi seu dinheiro.
+				34: Experiência de aprendizado.
+				33: Que tal não morrer?
+				32: Raiva é uma resposta válida.
+				31: O universo disse 'não'.
+				30: Devia ter focado.
+				29: Foi só um arranhão.
+				28: Pelo menos você é persistente.
+				27: É só uma inconveniência.
+				26: Você vai ressurgir.
+				25: Tudo bem, tente novamente.
+				24: Fim de jogo, por enquanto.
+				23: kkkk.
+				22: Vi isso chegando.
+				21: Só esquiva da próxima vez.
+				20: Cuide onde pisa.
+				19: Hilário.
+				18: Tente novamente, campe�o.
+				17: Oof.
+				16: É só um jogo.
+				15: Não previ isso.
+				14: É só isso que você tem?
+				13: Você pega eles na próxima.
+				12: A curiosidade matou o gato.
+				11: pfft.
+				10: Tentativa e erro.
+				9: Não fique bravo, melhore.
+				8: Melhor sorte na pr�xima.
+				7: Continue determinado!
+				6: Isso doeu?
+				5: Pelo menos não terá que pagar impostos!
+				4: A morte é só um revés.
+				3: Problema de habilidade?
+				2: Outro que caiu.
+				1: Você tentou, né?
+				0: Talvez na próxima.
+			}
+		}
+	}
+}

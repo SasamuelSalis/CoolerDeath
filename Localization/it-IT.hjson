@@ -1,0 +1,155 @@
+Mods: {
+	CoolerDeath: {
+		DisplayName: Schermata della Morte più Figa
+		Description: Un'esperienza di schermata della morte più figa
+
+		Configs: {
+			CoolerDeathConfig: {
+				DisplayName: Configurazione Schermata della Morte più Figa
+
+				ShowQuotes: {
+					Label: Mostra Citazioni
+					Tooltip: Mostra citazioni casuali divertenti quando muori
+				}
+
+				ShowCoinLoss: {
+					Label: Mostra Perdita Monete
+					Tooltip: Mostra quanti soldi hai perso quando muori
+				}
+
+				ShowRespawnTimer: {
+					Label: Mostra Timer Respawn
+					Tooltip: Mostra il countdown per il respawn
+				}
+
+				DarkBackground: {
+					Label: Sfondo Scuro
+					Tooltip: Mostra uno sfondo scuro dietro il testo della schermata della morte
+				}
+
+				BackgroundDarkness: {
+					Label: Oscurità Sfondo
+					Tooltip: Quanto scuro deve essere lo sfondo (0.1 = chiaro, 1.0 = molto scuro)
+				}
+
+				EnableFadeEffects: {
+					Label: Abilita Effetti Dissolvenza
+					Tooltip: Abilita animazioni fluide di dissolvenza per la schermata della morte
+				}
+			}
+		}
+
+		DeathMessages: {
+			SlainByNPC: Sei stato ucciso da {0}!
+			SlainByProjectile: Sei stato ucciso da {0}!
+			SlainByPlayer: Sei stato ucciso da {0}!
+			SlainByDefault: Sei stato ucciso da qualcosa!
+			Fell: Sei caduto da un'altezza elevata!
+			Drowned: Sei annegato!
+			Lava: Sei stato incenerito dalla lava!
+			Suffocated: Sei soffocato!
+			Spikes: Sei stato impalato da spuntoni!
+			Burned: Sei bruciato vivo!
+			Burning: Sei stato bruciato vivo!
+			Cursed: Sei stato maledetto a morte!
+			Poisoned: Sei stato avvelenato!
+			Envenomed: Sei stato avvelenato!
+			Electrocuted: Sei stato folgorato!
+			Froze: Sei congelato a morte!
+			Default: Sei morto...
+		}
+
+		UI: {
+			LostNoMoney: Non hai perso soldi!
+			LostCoins: Hai perso {0}!
+			Respawning: Rinascita tra {0}s
+
+			Quotes: {
+				83: Così è la vita
+				82: C'est la vie
+				81: Così va la vita
+				80: Beh...
+				79: Va tutto bene
+				78: Compito fallito con successo
+				77: Rinascita...
+				76: Inserisci moneta
+				75: Bella partita
+				74: GG no re
+				73: Rip
+				72: Bro
+				71: Ops
+				70: Cavolo
+				69: Che sfortuna, amico
+				68: F in chat
+				67: Beh, è successo
+				66: Tornare alla lavagna
+				65: I destini sono crudeli
+				64: Dimostrazione di abilità completata
+				63: Imparerai qualcosa da questo
+				62: Inevitabile
+				61: Le stelle non erano allineate
+				60: Riposa in pezzi
+				59: Umiliante
+				58: Uff
+				57: I dadi non erano dalla tua parte
+				56: Congratulazioni
+				55: Ci risiamo
+				54: Davvero?
+				53: Colpa tua
+				52: Caricamento rinascita...
+				51: Triste
+				50: F
+				49: Sfortunato
+				48: Prevedibile
+				47: Le tue abilità hanno bisogno di lavoro
+				46: Riprova
+				45: Contatore morti: +1
+				44: Subottimale
+				43: Qui giace il tuo ego
+				42: Evitabile
+				41: Imbarazzante
+				40: ...
+				39: Male: 1, Tu: 0
+				38: Questo lascerà il segno
+				37: Saluti dalla morte
+				36: Statisticamente probabile
+				35: Addio ai tuoi soldi
+				34: Esperienza di apprendimento
+				33: Che ne dici di non morire?
+				32: La rabbia è una risposta valida
+				31: L'universo ha detto 'no'
+				30: Avresti dovuto concentrarti
+				29: È solo un graffio
+				28: Almeno sei persistente
+				27: È solo un inconveniente
+				26: Ti rialzerai
+				25: Va bene, riprova
+				24: Gioco finito, per ora
+				23: hehe
+				22: L'avevo visto arrivare
+				21: Schiva e basta la prossima volta
+				20: Guarda dove metti i piedi
+				19: Divertente
+				18: Riprova, campione
+				17: Oof
+				16: È solo un gioco
+				15: Non me l'aspettavo
+				14: È tutto qui?
+				13: Li prendi la prossima volta
+				12: La curiosità uccise il gatto
+				11: pfft
+				10: Prova e errore
+				9: Non arrabbiarti, migliora
+				8: Miglior fortuna la prossima volta
+				7: Resta determinato!
+				6: Ha fatto male?
+				5: Almeno niente tasse!
+				4: La morte è solo un contrattempo
+				3: Skill issue?
+				2: Un altro che morde la polvere
+				1: Ci hai provato, vero?
+				0: Forse la prossima volta
+			}
+		}
+	}
+}
