@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<!-- Import tModLoader mod properties -->
 	<Import Project="..\tModLoader.targets" />
@@ -21,6 +21,11 @@
 	  <!-- Treat all localization .hjson files as non-compiled content -->
 	  <None Include="Localization\**\*.hjson" />
 	  <Compile Remove="Localization\**\*.hjson" />
+	</ItemGroup>
+	<ItemGroup>
+	  <AdditionalFiles Remove="Localization\de-DE.hjson" />
+	  <AdditionalFiles Remove="Localization\it-IT.hjson" />
+	  <AdditionalFiles Remove="Localization\ru-RU.hjson" />
 	</ItemGroup>
 
 </Project>

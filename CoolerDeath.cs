@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 
@@ -17,26 +18,6 @@ namespace CoolerDeath
         public string deathQuote;
         public string deathCause;
 
-        private static readonly string[] quotes = {
-            "Maybe next time.", "You tried, right?", "Another one bites the dust.", "Skill issue?",
-            "Death is just a setback.", "At least you won't pay taxes!", "Did that hurt?", "Stay determined!",
-            "Better luck next time.", "Don't get mad, get better.", "Trial and error.", "pfft.",
-            "Curiosity killed the cat.", "You'll get 'em next time.", "Is that all you've got?",
-            "Didn't see that coming.", "It's just a game.", "Oof.", "Try again, champ.", "Hilarious.",
-            "Watch your step.", "Just dodge next time.", "Saw that coming.", "hehe.", "Game over, for now.",
-            "It's okay, try again.", "You will rise again.", "Just an inconvenience.", "Atleast you're persistent.",
-            "T'is but a scratch.", "Should've locked in.", "Universe said 'no'.", "Rage is valid.", "Try not dying?",
-            "Learning experience.", "There goes your money.", "Statistically likely.", "Reaper's regards.",
-            "That'll leave a mark.", "Evil: 1, You: 0", "...", "Embarrassing.", "Avoidable.", "Here lies your ego.",
-            "Suboptimal.", "Death count: +1", "Try again.", "Skills need some work.", "Predictable.", "Unfortunate.",
-            "F", "Sad.", "Respawn loading...", "Your fault.", "Really?", "Here we go again.", "Congratulations.",
-            "Dice weren't in your favor.", "Eurgh", "Humbling.", "Rest in shreds.", "Stars were aligned incorrectly.",
-            "Inevitable.", "You'll learn something from this.", "Skill demonstration complete.", "Fates are cruel.",
-            "Back to drawing board.", "Well, that happened.", "F in chat.", "That's rough buddy.", "Yikes.", "Oops.",
-            "Bruh.", "Rip.", "GG no re.", "Good run.", "Insert coin.", "Respawning...", "Task failed successfully.",
-            "This is fine.", "Welp.", "It be like that.", "C'est la vie.", "Such is life."
-        };
-
         public override void Kill(double damage, int hitDirection, bool pvp, PlayerDeathReason damageSource)
         {
             var config = ModContent.GetInstance<CoolerDeathConfig>();
@@ -46,7 +27,10 @@ namespace CoolerDeath
             deathActive = true;
 
             if (config.ShowQuotes)
-                deathQuote = Main.rand.Next(quotes);
+            {
+                int quoteNumber = Main.rand.Next(0, 84); // 0 to 83 inclusive
+                deathQuote = Language.GetTextValue($"Mods.CoolerDeath.UI.Quotes.{quoteNumber}");
+            }
             else
                 deathQuote = "";
 
@@ -64,7 +48,7 @@ namespace CoolerDeath
         private static string GetDeathCause(PlayerDeathReason reason, Player player)
         {
             if (reason == null)
-                return "You died...";
+                return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Default");
 
             // Check for custom death reason first
             if (reason.CustomReason != null && !string.IsNullOrEmpty(reason.CustomReason.ToString()))
@@ -76,44 +60,44 @@ namespace CoolerDeath
                 switch (entity)
                 {
                     case NPC npc:
-                        return $"You were slain by {npc.FullName}!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.SlainByNPC", npc.FullName);
                     case Projectile proj:
                         string projName = Lang.GetProjectileName(proj.type).Value;
                         if (!string.IsNullOrEmpty(projName) && projName != "")
-                            return $"You were slain by {projName}!";
-                        return "You were slain by a projectile!";
+                            return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.SlainByProjectile", projName);
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.SlainByDefault");
                     case Player otherPlayer:
-                        return $"You were slain by {otherPlayer.name}!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.SlainByPlayer", otherPlayer.name);
                 }
             }
 
             // Check SourceOtherIndex for environmental deaths
             switch (reason.SourceOtherIndex)
             {
-                case 0: return "You fell from a great height!";
-                case 1: return "You drowned!";
-                case 2: return "You were incinerated by lava!";
+                case 0: return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Fell");
+                case 1: return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Drowned");
+                case 2: return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Lava");
                 case 3:
                     // Check if player was suffocating (sand/slush/silt) at the MOMENT of death
                     if (player.suffocating)
-                        return "You suffocated!";
-                    return "You were impaled by spikes!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Suffocated");
+                    return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Spikes");
                 default:
                     // Check for common debuff deaths
                     if (player.onFire)
-                        return "You burned to death!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Burned");
                     if (player.HasBuff(67)) // Burning buff from hot blocks like Hellstone
-                        return "You were burned alive!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Burning");
                     if (player.onFire2) // Cursed Inferno
-                        return "You were cursed to death!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Cursed");
                     if (player.poisoned)
-                        return "You were poisoned!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Poisoned");
                     if (player.venom)
-                        return "You were envenomed!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Envenomed");
                     if (player.electrified)
-                        return "You were electrocuted!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Electrocuted");
                     if (player.frostBurn)
-                        return "You froze to death!";
+                        return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Froze");
 
                     string vanillaText = reason.GetDeathText(player.name).ToString();
                     if (vanillaText.Contains(" was "))
@@ -122,7 +106,7 @@ namespace CoolerDeath
                         if (index > 0)
                             return "You were" + vanillaText.Substring(index + 4); // +4 to skip " was"
                     }
-                    return "You died..."; // ADD THIS LINE - final fallback
+                    return Language.GetTextValue("Mods.CoolerDeath.DeathMessages.Default");
             }
         }
     }
@@ -214,11 +198,11 @@ namespace CoolerDeath
                 string coinText;
                 if (string.IsNullOrEmpty(cdPlayer.lostCoinsString) || cdPlayer.lostCoinsString == "0 Copper")
                 {
-                    coinText = "Lost no money!";
+                    coinText = Language.GetTextValue("Mods.CoolerDeath.UI.LostNoMoney");
                 }
                 else
                 {
-                    coinText = $"Lost {cdPlayer.lostCoinsString}!";
+                    coinText = Language.GetTextValue("Mods.CoolerDeath.UI.LostCoins", cdPlayer.lostCoinsString);
                 }
 
                 Utils.DrawBorderString(spriteBatch, coinText, center + new Vector2(0, 100f),
@@ -229,7 +213,7 @@ namespace CoolerDeath
             if (config.ShowRespawnTimer && player.respawnTimer > 0)
             {
                 float seconds = 1f + player.respawnTimer / 60f;
-                string respawnText = $"Respawning in {seconds:0}s...";
+                string respawnText = Language.GetTextValue("Mods.CoolerDeath.UI.Respawning", seconds.ToString("0"));
                 Utils.DrawBorderString(spriteBatch, respawnText, center + new Vector2(0, 140f),
                     Color.Lerp(Color.Transparent, Color.Gray, fade), 1f, 0.5f, 0.5f);
             }
