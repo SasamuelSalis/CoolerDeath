@@ -36,6 +36,11 @@ Mods: {
 					Label: Enable Fade Effects
 					Tooltip: Enable smooth fade in/out animations for the death screen
 				}
+
+				EnableRespawnEffects: {
+					Label: Enable Respawn Effects
+					Tooltip: Enable special effects when respawning
+				}
 			}
 		}
 
@@ -61,8 +66,8 @@ Mods: {
 
 		UI: {
 			LostNoMoney: Lost no money!
-			LostCoins: Lost {0}!
-			Respawning: Respawning in {0}s...
+			LostCoins: Lost:
+			Respawning: Respawning in {0}...
 
 			Quotes: {
 				83: Such is life.

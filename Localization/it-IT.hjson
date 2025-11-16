@@ -36,6 +36,11 @@ Mods: {
 					Label: Abilita Effetti Dissolvenza
 					Tooltip: Abilita animazioni fluide di dissolvenza per la schermata della morte
 				}
+
+				EnableRespawnEffects: {
+					Label: Abilita effetti di rigenerazione
+					Tooltip: Abilita gli effetti speciali durante la rigenerazione
+				}
 			}
 		}
 
@@ -61,8 +66,8 @@ Mods: {
 
 		UI: {
 			LostNoMoney: Non hai perso soldi!
-			LostCoins: Hai perso {0}!
-			Respawning: Rinascita tra {0}s
+			LostCoins: Hai perso:
+			Respawning: Rinascita tra {0}...
 
 			Quotes: {
 				83: Così è la vita

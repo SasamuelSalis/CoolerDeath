@@ -36,6 +36,11 @@ Mods: {
 					Label: Ativar Efeitos de Fade
 					Tooltip: Ativar animações suaves de aparecer/desaparecer para a tela de morte
 				}
+
+				EnableRespawnEffects: {
+					Label: Ativar Efeitos de Renascimento
+					Tooltip: Ativar efeitos especiais ao renascer
+				}
 			}
 		}
 
@@ -61,8 +66,8 @@ Mods: {
 
 		UI: {
 			LostNoMoney: Não perdeu dinheiro!
-			LostCoins: Perdeu {0}!
-			Respawning: Renascendo em {0}s...
+			LostCoins: Perdeu:
+			Respawning: Renascendo em {0}...
 
 			Quotes: {
 				83: Assim É a vida.

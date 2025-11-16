@@ -36,6 +36,11 @@ Mods: {
 					Label: Activar Efectos de Fundido
 					Tooltip: Activar animaciones suaves de aparición/desaparición para la pantalla de muerte
 				}
+
+				EnableRespawnEffects: {
+					Label: Habilitar efectos de reaparición
+					Tooltip: Habilitar efectos especiales al reaparecer
+				}
 			}
 		}
 
@@ -61,8 +66,8 @@ Mods: {
 
 		UI: {
 			LostNoMoney: ¡No perdiste dinero!
-			LostCoins: ¡Perdiste {0}!
-			Respawning: Reapareciendo en {0}s...
+			LostCoins: Perdiste:
+			Respawning: Reapareciendo en {0}...
 
 			Quotes: {
 				83: Así es la vida.

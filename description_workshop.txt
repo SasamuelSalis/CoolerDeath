@@ -1,5 +1,7 @@
 [h1]Sam's Cooler Death Screen[/h1]
 
+[img]https://i.imgur.com/tIafE9r.gif[/img]
+
 Hello everyone! It's me, the main menu guy again.
 
 This is another mod I made for personal use. Same old story. I wanted to change something in the game and there was no mod for it, so I made one myself!
@@ -12,6 +14,7 @@ This mod completely overhauls the death screen experience, replacing the boring 
 [*]Death text based on how you died
 [*]Alot of random death messages
 [*]Smooth fade in animation
+[*]NEW Respawn effect.
 [*]Fully configurable - toggle features on/off to your liking!
 [/list]
 
@@ -29,4 +32,10 @@ You can check out my other mods on my profile if you want to see more stuff I've
 
 Have fun with the mod! (NOTE: other death screen mods MAY conflict with this one)
 
-[i]Stay cool![/i]
+(big thanks to Erky for localization help)
+
+[i]Stay cool![/i][quote=tModLoader CoolerDeath]
+Developed By Samuel Salis[/quote]
+
+also try:
+https://steamcommunity.com/sharedfiles/filedetails/?id=3585192567

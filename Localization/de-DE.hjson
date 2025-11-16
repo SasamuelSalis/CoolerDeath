@@ -36,6 +36,11 @@ Mods: {
 					Label: Einblendeffekte aktivieren
 					Tooltip: Aktiviere sanfte Ein-/Ausblend Animationen fuer den Tod Bildschirm
 				}
+
+				EnableRespawnEffects: {
+					Label: Respawn-Effekte aktivieren
+					Tooltip: Spezialeffekte beim Wiederbeleben aktivieren
+				}
 			}
 		}
 
@@ -61,8 +66,8 @@ Mods: {
 
 		UI: {
 			LostNoMoney: Kein Geld verloren
-			LostCoins: "{0} verloren"
-			Respawning: Wiederbeleben in {0}s
+			LostCoins: verloren:
+			Respawning: Wiederbeleben in {0}...
 
 			Quotes: {
 				83: So ist das Leben

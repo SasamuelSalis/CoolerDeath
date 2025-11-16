@@ -25,5 +25,8 @@ namespace CoolerDeath
 
         [DefaultValue(true)]
         public bool EnableFadeEffects { get; set; }
+
+        [DefaultValue(true)]
+        public bool EnableRespawnEffects { get; set; }
     }
 }
